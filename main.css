@@ -1,0 +1,93 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Manrope:wght@800&family=Poppins:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--Dark-Grayish-Blue);
+    color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-0.1px);
+}
+p{
+    font-size: 28px;
+}
+
+.container{
+    box-sizing: border-box;
+    background-color:var(--Grayish-Blue);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 100px;   
+    
+}
+.container h1{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.container p{
+    margin-bottom: 3rem;
+    color: var(--Light-Cyan);
+}
+.container picture img{
+    margin-bottom: 1.5rem;
+}
+
+.container button{
+    background-color: var(--Neon-Green);
+    padding: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+    transform: translate(-50%);
+}
+.container button:hover{
+    background-color:hsl(150, 81%, 75%);
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 14px; 
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--Light-Cyan);
+ }
+.attribution a { 
+    color: hsl(228, 73%, 61%);
+    transition: color 0.3s ease-in-out;
+ }
+ .attribution a:hover{
+    color: hsl(228, 86%, 41%);
+ }
+ .lineImg{
+   
+    display: block;
+ }
+ @media (min-width: 500px){
+    .container{
+        max-width: 480px;
+    }
+ }
